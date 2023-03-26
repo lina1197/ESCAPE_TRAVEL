@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/Blog.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- navbar section -->
+<div id="navImg"><img src="/images/Blog_bg.jpg" alt="navbar image"></div>
+<nav>
+
+    <div id="logo"><a href="/index.html"><img src="/images/logo.png" alt=""></a></div>
+    <ul class="nav-menu">
+        <li class="nav-item "><input type="search" placeholder="search..."></li>
+        <li class="nav-item"> <a href="/NotFound.html" class="nav-link">About</a> </li>
+        <li class="nav-item"> <a href="/NotFound.html" class=" nav-link">Contact us</a> </li>
+        <li class="nav-item "> <a href="/Destinations.html" class="nav-link">Destinations</a> </li>
+        <li class="nav-item "> <a href="/Blog.html" class="nav-link">Blog</a> </li>
+
+        <li class="nav-item "> <a href="/NotFound.html" class="nav-link">Login</a> </li>
+        <li class="nav-item "> <a href="/NotFound.html" class="nav-link">Join us</a> </li>
+    </ul>
+
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+</nav>
+<script>const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }</script>
+ 
+<!-- blog posts section -->
+<div class="container3">
+    <div class="card">
+        <div class="img">
+            <img src="/images/blogPost1.jpg">
+        </div>
+        <div class="top-text">
+            <div class="name">
+                First Backpacking Trip
+            </div>
+        </div>
+        <div class="bottom-text">
+            <div class="text">
+                Backpacking is one of the most rewarding ways to explore new destinations and connect with nature. But
+                it's not for
+                everyone. Before you strap on your backpack and hit the trails, here are some things to consider...
+            </div>
+            <div class="btn">
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="img">
+            <img src="/images/blogPost2.jpg">
+        </div>
+        <div class="top-text">
+            <div class="name">
+                Top Tips for Solo Travelers on an Adventure Trip </div>
+
+        </div>
+        <div class="bottom-text">
+            <div class="text">
+                Traveling alone can be a liberating experience, but it can also be daunting. Here are some tips to help
+                you feel
+                confident and prepared for your solo adventure trip...
+            </div>
+            <div class="btn">
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="img">
+            <img src="/images/blogPost3.jpg">
+        </div>
+        <div class="top-text">
+            <div class="name">
+                How to Choose the Right Adventure Tour for You
+            </div>
+
+        </div>
+        <div class="bottom-text">
+            <div class="text">
+                Adventure tours offer a unique and exciting way to explore new destinations and make lasting memories.
+                But with so many
+                options available, how do you choose the right one for you? Here are some key factors...
+            </div>
+            <div class="btn">
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer section -->
+<footer>
+    <div id="logo"><img src="/images/logo.png" alt=""></div>
+    <div class="footer_section">
+        <div class="information">
+            <h3>information</h3>
+            <ul>
+                <li><a href="/NotFound.html">About us</a></li>
+                <li><a href="/NotFound.html">Testimonials</a></li>
+                <li><a href="/NotFound.html">Newsletter</a></li>
+                <li><a href="/NotFound.html">Terms and conditions</a></li>
+            </ul>
+        </div>
+        <div class="Quick Links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Destinations.html">Tours</a></li>
+                <li><a href="/Blog.html">Blog</a></li>
+                <li><a href="/NotFound.html">FAQS</a></li>
+            </ul>
+        </div>
+        <div class="Contact">
+            <h3>contact</h3>
+            <p>Name: John Doe <br>
+                Email: johndoe@example.com <br>
+                Phone: +1 (555) 123-4567 <br>
+                Address: 123 Main Street <br>
+                City: Anytown <br>
+                State: Any State <br>
+                Zip Code: 12345</p>
+
+        </div>
+        <div class="contact_form">
+
+            <h3>Contact Form</h3>
+
+            <form action="submit" method="POST">
+                <input type="text" id="fname" name="name" placeholder="Type your name..">
+                <input type="text" id="lname" name="surname" placeholder="Type your last name..">
+                <input type="text" id="mail" name="e-mail" placeholder="Type your e-mail..">
+                <textarea id="message" name="message" placeholder="Type your message.."
+                    style="height: 200px"></textarea>
+                <input id="button" type="submit" value="Send">
+            </form>
+        </div>
+
+    </div>
+    <div class="socialMedia-icons" style="font-size: 1.2rem;">
+        <a href="/NotFound.html"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="/NotFound.html"><i class="fa-brands fa-linkedin"></i> </a>
+        <a href="/NotFound.html"><i class="fa-brands fa-square-youtube"></i></a>
+        <a href="/NotFound.html"><i class="fa-brands fa-instagram"></i></a>
+        <a href="/NotFound.html"><i class="fa-brands fa-square-twitter"></i></a>
+    </div>
+    <hr />
+    <div class="copyright"> Copyright © 2023. All rights reserved.</div>
+</footer>
+</body>
+</html>

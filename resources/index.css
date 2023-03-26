@@ -200,6 +200,37 @@ nav ul {
     }
 }
 
+/* css choose us section */
+
+.reasons {
+    display:flex;
+    justify-content: space-around;
+}
+
+.choose_us img{
+    width:50px;
+    background-color: #144361;
+    border-radius: 50%;
+    padding:10px;
+    display: block;
+        margin-left: auto;
+        margin-right: auto
+    
+}
+.choose_us h3{
+    text-align: center;
+    font-size:2.5rem;
+}
+.reason h4,p {
+    text-align: center;
+    width:20vw;
+}
+@media only screen and (max-width: 768px) {
+.reasons {
+       flex-direction: column;
+       align-items: center;
+    }
+}
 
 /* css slider */
 
@@ -267,7 +298,11 @@ nav ul {
 .slide img {
     height:525px;
     width:325px;
-    margin-right: 40px;
+    margin-right: 20px;
+}
+
+.slide img .image_3 {
+    margin-right:0px;
 }
 .slide__text {
     font-size: 40px;
@@ -308,5 +343,218 @@ a.slide__next {
     .media-links-mobile {
         display: block;
     }
+        .slide img {
+            height: 525px;
+            width: 325px;
+            margin-right: 0px;
+        }
 
+}
+/* css blog posts */
+.container3 {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    height: 280px;
+    max-width: 350px;
+    margin: 0 20px;
+    background: white;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    height: 470px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .img {
+    height: 200px;
+    width: 100%;
+}
+
+.card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .top-text {
+    padding: 5px;
+}
+
+.card .top-text .name {
+    font-size: 25px;
+    font-weight: 600;
+    color: #202020;
+}
+
+
+.card .bottom-text {
+    /* padding: 0 20px 10px 20px; */
+    padding:5px;
+    margin-top: 5px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.card:hover .bottom-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .bottom-text .text {
+    text-align: justify;
+}
+
+.card .bottom-text .btn {
+    margin: 10px 0;
+    text-align: right;
+}
+
+.card .bottom-text .btn a {
+    text-decoration: none;
+    background: #144361;
+    color: #f2f2f2;
+    padding: 5px 8px;
+    border-radius: 20px;
+    display: inline-flex;
+    transition: 0.2s;
+}
+
+.card .bottom-text .btn a:hover {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 978px) {
+    .container3 {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 700px;
+        margin: 20px 0;
+    }
+}
+
+/* css footer */
+footer #logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:150px;
+}
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+   background: url(/images/alexander-slattery-1qjdMJ9zlKk-unsplash.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;  
+    font-size: 1.2rem; 
+    color:white;
+
+}
+.footer_section {
+   
+    display:flex;
+    justify-content: space-around;
+}
+.contact_form form{
+    display:flex;
+    flex-direction: column;
+}
+.contact_form input {
+    outline:none;
+    border:none;
+    background: none;;
+    border-bottom: 2px solid #fff;
+    margin-bottom:10px;    
+    font-size:1rem;
+
+}
+ 
+.contact_form form input::placeholder{
+    color:#fff;
+}
+.contact_form form textarea::placeholder {
+    color: #fff;
+}
+
+.contact_form form textarea {
+    background:none;
+    border: none;
+    outline:none;
+    border-bottom: 2px solid #fff;
+    color:#fff;
+    font-size: 1rem;
+    min-width:200px;
+    max-width:200px;
+    min-height:80px;
+    max-height:80px;
+}
+textarea::-webkit-scrollbar{
+    width:1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+.contact_form form #button {
+    border:2px solid #fff;
+    border-radius: 20px;
+    margin-top:20px;
+    color:white;
+    width:fit-content;
+    padding:2px 20px;
+    margin-left: auto;
+    margin-right:auto;
+}
+ .socialMedia-icons {
+     margin-top: 20px;
+     text-align: center;
+ }
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid white;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .footer_section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_section h3 {
+        text-align: center;
+    }
+
+        .footer_section ul {
+            text-align: center;
+        }
+                .footer_section p {
+                    text-align: center;
+                }
+                                
 }
