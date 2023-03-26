@@ -1,38 +1,35 @@
-.page_404 {
-    padding: 40px 0;
-    background: #fff;
-    font-family: 'Arvo', serif;
-}
-
-.page_404 img {
-    width: 100%;
-}
-
-.four_zero_four_bg {
-
-    background-image: url(/images/kindpng_2550142.png);
-    height: 500px; 
-    background-repeat: no-repeat;
-    background-position: center;
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size:1.5rem;
 }
 
 
-.four_zero_four_bg h1 {
-    font-size: 80px;
+.four_zero_four_bg img{
+    width:100%;
 }
+
 
 .four_zero_four_bg h3 {
-    font-size: 80px;
+    font-size: 1.6rem;
 }
 
 .link_404 {
-    color: #fff !important;
+    color: #fff;
     padding: 10px 20px;
-    background: #39ac31;
+    background: #144361;
     margin: 20px 0;
     display: inline-block;
 }
 
-.contant_box_404 {
-    margin-top: -50px;
+
+.content_box_404 {
+    margin-top:50px;
+}
+
+a:link, a:hover {
+    text-decoration: none;
+    background-color: green;
+    color:white;
 }

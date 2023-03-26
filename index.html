@@ -49,12 +49,15 @@
             <div class="counter-grid">
                 <div class="counter-item">
                     <h1 class="counter" data-target="400">0</h1>
+                    <h3>Successful trips</h3>
                 </div>
                 <div class="counter-item">
                     <h1 class="counter" data-target="600">0</h1>
+                    <h3>Regular clients</h3>
                 </div>
                 <div class="counter-item">
                     <h1 class="counter" data-target="150">0</h1>
+                    <h3>Expert tour guide</h3>
                 </div>
                 
             </div>
@@ -63,30 +66,35 @@
 
 <!-- why you should choose us section -->
 <section class="choose_us">
-    <h3>why you should choose us ?</h3>
+    <h3>Why Choose <span style="color:#144361">Us?</span> </h3>
     <div class="reasons">
-        <div class="reason"><div class="chooseUsImage"><img src="/images/chooseUsImg.png" alt=""></div>
-        <h4>tried and trusted</h4>
-    <p>We’re trusted by hundreds of travelers just like you.</p></div>
+        <div class="reason"><div class="chooseUsImage" id="hoverMe"><img src="/images/chooseUsImg.png" alt=""></div>
+        <div id="showMe"><h4>tried and trusted</h4>
+    <p>We are trusted by hundreds of travelers just like you.</p></div></div>
+        
     <div class="reason">
-       <div class="chooseUsImage"><img src="/images/chooseUsImg2.png" alt=""></div> 
-        <h4>Reliable Support</h4>
-<p>You can reach out to us at anytime if you have any issue</p>    </div>
+       <div class="chooseUsImage" id="hoverMe"><img src="/images/chooseUsImg2.png" alt=""></div> 
+        <div id="showMe"><h4>Reliable Support</h4>
+<p>You can reach out to us at anytime if you have any issue</p></div>    </div>
 <div class="reason">
-    <div class="chooseUsImage">    <img src="/images/chooseUsImg3.png" alt=""></div>
-    <h4>Full service</h4>
-    <p>We’ve got your entire trip convered from A to Z.</p>
+    <div class="chooseUsImage" id="hoverMe">    <img src="/images/chooseUsImg3.png" alt=""></div>
+    <div id="showMe"><h4>Full service</h4>
+    <p>We’ve got your entire trip convered from A to Z.</p></div>
+    
 </div>
 <div class="reason">
-    <div class="chooseUsImage"><img src="/images/chooseUsImg4.png" alt=""></div>
-    <h4>Affordable price</h4>
-    <p>Travel doesn’t have to break the bank-let us help you plan your adventure at a price that works for you</p>
+    <div class="chooseUsImage" id="hoverMe"><img src="/images/chooseUsImg4.png" alt=""></div>
+    <div id="showMe"><h4>Affordable price</h4>
+    <p>Travel doesn’t have to break the bank-let us help you plan your adventure at a price that works for you</p></div>
+    
 </div>
     </div>
 </section>
 
     <script src="script.js"></script>
     <!--slider section-->
+    <h3 id="DestinationsHeader">Destinations</h3>
+    
     <div class="slider-container">
         <div class="slider">
             <div class="slides">
@@ -98,11 +106,15 @@
                        
                         <img src="images/camel-g30e7eaa85_1920.jpg" class="image_mobile">
                     </span>
-                    <a class="slide__prev" href="#slides__4" title="Next"></a>
+                    <a class="slide__prev" href="#slides__3" title="Next"></a>
                     <a class="slide__next" href="#slides__2" title="Next"></a>
                 </div>
                 <div id="slides__2" class="slide">
-                    <span class="slide2"><img src="images/slide2.png" class="image_full">
+                    <span class="slide2"><div class="duo"><img src="images/sri-lanka-gbe6dc3f6d_1920.jpg" class="image_full">
+                        <img src="images/newzealand-g0329a734a_1920.jpg" class="image_full">
+                        <img src="/images/gran-canaria-gab211701f_1920.jpg" class="image_full image_3">
+                    </div>
+                                            
                         <img src="images/machu-pichu-gc7080241e_1920.jpg" class="image_mobile">
     
                     </span>
@@ -110,27 +122,26 @@
                     <a class="slide__next" href="#slides__3" title="Next"></a>
                 </div>
                 <div id="slides__3" class="slide">
-                    <span class="slide3"><img src="images/slide3.png" class="image_full">
+                    <span class="slide3">
+                        <div class="duo"><img src="images/venice-gf3a38f8c7_1920.jpg" class="image_full">
+                        <img src="images/maldives-g33aa9e2c0_1920.jpg" class="image_full">
+                        <img src="/images/great-wall-g946049d78_1920.jpg" class="image_full image_3"></div>
                         <img src="images/phone-wallpaper-g494754f98_1920.jpg" class="image_mobile">
     
                     </span>
                     <a class="slide__prev" href="#slides__2" title="Prev"></a>
-                    <a class="slide__next" href="#slides__4" title="Next"></a>
-                </div>
-                <div id="slides__4" class="slide">
-                    <span class="slide4"><img src="images/slide4.png" class="image_full">
-                        <img src="images/slide4-mobile.png" class="image_mobile">
-    
-                    </span>
-                    <a class="slide__prev" href="#slides__3" title="Prev"></a>
                     <a class="slide__next" href="#slides__1" title="Prev"></a>
                 </div>
+                
             </div>
         </div>
     </div>
-    <!--end of slider section-->
+    <div class="viewAll"><a href="/Destinations.html">View all</a></div>
 
+    <!--end of slider section-->
     <!-- blog posts section -->
+    <h3 id="BlogPostsHeader">Blog posts</h3>
+
     <div class="container3">
         <div class="card">
             <div class="img">
@@ -147,7 +158,7 @@
                     everyone. Before you strap on your backpack and hit the trails, here are some things to consider...
                 </div>
                 <div class="btn">
-                    <a href="#">Read more</a>
+                    <a href="/NotFound.html">Read more</a>
                 </div>
             </div>
         </div>
@@ -166,7 +177,7 @@ Top Tips for Solo Travelers on an Adventure Trip                </div>
             confident and prepared for your solo adventure trip...
                 </div>
                 <div class="btn">
-                    <a href="#">Read more</a>
+                    <a href="/NotFound.html">Read more</a>
                 </div>
             </div>
         </div>
@@ -186,11 +197,13 @@ Top Tips for Solo Travelers on an Adventure Trip                </div>
                 options available, how do you choose the right one for you? Here are some key factors...
                 </div>
                 <div class="btn">
-                    <a href="#">Read more</a>
+                    <a href="/NotFound.html">Read more</a>
                 </div>
             </div>
         </div>
     </div>
+    <div class="viewAll"><a href="/Blog.html">View all</a></div>
+
 
     <!-- footer section -->
 <footer>
